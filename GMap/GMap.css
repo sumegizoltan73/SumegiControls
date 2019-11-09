@@ -1,0 +1,18 @@
+﻿.gmapinfo       { font-family: Segoe UI, Verdana, arial; font-size: 0.7em; }
+#map div    { width: auto; }
+#map			 
+{
+    width: 600px; 
+    height: 300px; 
+    margin: 0; 
+    padding: 0px; 
+    color: #2a3333; 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#eaeaea)); 
+    background: -moz-linear-gradient(center top , white, #eaeaea); 
+    filter: progid:dximagetransform.microsoft.gradient(startcolorstr=#ffffff, endcolorstr=#eaeaea); 
+    -moz-box-shadow: rgb(153, 153, 153) 0 2px 4px 0;
+    -webkit-box-shadow: rgb(153, 153, 153) 0 2px 4px 0;
+    box-shadow: rgb(153, 153, 153) 0 2px 4px 0; }
+#map_canvas		{ width: 100%; height: 100%; }
+#map div.logo   { width: 500px; height:300px; position: absolute; background-image: url(<%=WebResource("CustomExtenders.GMap.images.powered-by-google-on-white.png")%>); background-position: right 88%; background-repeat: no-repeat; }
+#map div.logo div { width: 500px; height:300px; background-image: url(<%=WebResource("CustomExtenders.GMap.images.logo_powered_by_bing.png")%>); background-position: left 90%; background-repeat: no-repeat; }

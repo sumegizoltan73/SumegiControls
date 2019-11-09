@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A125F13-6F5B-461D-ABEA-F1E10A5A686B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CustomExtenders</RootNamespace>
+    <AssemblyName>CustomExtenders</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CustomExtenders.snk.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientBehaviors.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientBehaviors.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Collapsible\Collapsible.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Collapsible.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Collapsible\CollapsibleDesigner.cs" />
+    <Compile Include="Collapsible\CollapsibleExtender.cs" />
+    <Compile Include="ConsoleDebug\ConsoleDebug.cs" />
+    <Compile Include="ConsoleDebug\ConsoleDebug.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConsoleDebug.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsoleDebug\ConsoleDebugDesigner.cs" />
+    <Compile Include="ConsoleDebug\ConsoleDebugExtender.cs" />
+    <Compile Include="ExtendedValidatorCallout\ExtendedValidatorCalloutDesigner.cs" />
+    <Compile Include="ExtendedValidatorCallout\ExtendedValidatorCalloutExtender.cs" />
+    <Compile Include="FieldAjaxChange\FieldAjaxChange.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FieldAjaxChange.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FieldAjaxChange\FieldAjaxChangeDesigner.cs" />
+    <Compile Include="FieldAjaxChange\FieldAjaxChangeExtender.cs" />
+    <Compile Include="GMap\GMapCommon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GMapCommon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GMap\GMapCommonDesigner.cs" />
+    <Compile Include="GMap\GMapCommonExtender.cs" />
+    <Compile Include="GMap\LocationGMap.cs" />
+    <Compile Include="ImageLoader\ImageLoaderDesigner.cs" />
+    <Compile Include="ImageLoader\ImageLoaderExtender.cs" />
+    <Compile Include="LocationCommon\LocationCommon.cs" />
+    <Compile Include="MenuFormat\MenuFormatDesigner.cs" />
+    <Compile Include="MenuFormat\MenuFormatExtender.cs" />
+    <Compile Include="PlaceSearch\LocationAirportDesigner.cs" />
+    <Compile Include="PlaceSearch\LocationAirportExtender.cs" />
+    <Compile Include="PlaceSearch\LocationPlaceSearchDesigner.cs" />
+    <Compile Include="PlaceSearch\LocationPlaceSearchExtender.cs" />
+    <Compile Include="PlaceSearch\LocationWaypointCommonDesigner.cs" />
+    <Compile Include="PlaceSearch\LocationWaypointCommonExtender.cs" />
+    <Compile Include="PlaceSearch\PlaceSearch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaceSearch.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceSearch\PlaceSearchAirport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaceSearchAirport.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PlaceSearch\PlaceSearchWaypointCommon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlaceSearchWaypointCommon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\DateField.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DateField.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins\Plugins.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReservationDateTime\ReservationDateTimeDesigner.cs" />
+    <Compile Include="ReservationDateTime\ReservationDateTimeExtender.cs" />
+    <Compile Include="ReservationDateTime\ReservationDateUpdaterDesigner.cs" />
+    <Compile Include="ReservationDateTime\ReservationDateUpdaterExtender.cs" />
+    <Compile Include="StepValidator\StepValidatorDesigner.cs" />
+    <Compile Include="StepValidator\StepValidatorExtender.cs" />
+    <Compile Include="VehicleList\VehicleListDesigner.cs" />
+    <Compile Include="VehicleList\VehicleListExtender.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClientBehaviors.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClientBehaviors.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\RegisterLoader.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Collapsible\Collapsible.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Collapsible.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsoleDebug\ConsoleDebug.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ConsoleDebug.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FieldAjaxChange\FieldAjaxChange.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>FieldAjaxChange.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GMap\GMapCommon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GMapCommon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationCommon\LocationCommon.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PlaceSearch\LocationPlaceSearchBehavior.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PlaceSearch\LocationPlaceSearchBehavior.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AjaxControlToolkit.dll" />
+    <EmbeddedResource Include="Plugins\validationscripts.debug.js" />
+    <EmbeddedResource Include="Plugins\validationscripts.js" />
+    <EmbeddedResource Include="ExtendedValidatorCallout\ExtendedValidatorCalloutBehavior.debug.js" />
+    <EmbeddedResource Include="ExtendedValidatorCallout\ExtendedValidatorCalloutBehavior.js" />
+    <Content Include="ExtendedValidatorCallout\ValidatorCalloutBehavior.js" />
+    <EmbeddedResource Include="MenuFormat\images\menuitem_out_8591eb.png" />
+    <EmbeddedResource Include="ReservationDateTime\ReservationDateUpdaterBehavior.debug.js" />
+    <EmbeddedResource Include="ReservationDateTime\ReservationDateUpdaterBehavior.js" />
+    <EmbeddedResource Include="FieldAjaxChange\FieldAjaxChangeBehavior.debug.js" />
+    <EmbeddedResource Include="FieldAjaxChange\FieldAjaxChangeBehavior.js" />
+    <EmbeddedResource Include="Plugins\jquery.fieldajaxchange.debug.js" />
+    <EmbeddedResource Include="Plugins\jquery.fieldajaxchange.js" />
+    <EmbeddedResource Include="ConsoleDebug\ConsoleDebugBehavior.debug.js" />
+    <EmbeddedResource Include="ConsoleDebug\ConsoleDebug.js" />
+    <EmbeddedResource Include="ConsoleDebug\ConsoleDebugBehavior.js" />
+    <EmbeddedResource Include="GMap\images\ajax-loader-indicator.gif" />
+    <EmbeddedResource Include="VehicleList\images\ajax-loader-indicator.gif" />
+    <EmbeddedResource Include="ImageLoader\images\ajax-loader-indicator.gif" />
+    <EmbeddedResource Include="Collapsible\CollapsibleBehavior.debug.js" />
+    <EmbeddedResource Include="Collapsible\CollapsibleBehavior.js" />
+    <EmbeddedResource Include="GMap\GMapCommonBehavior.debug.js" />
+    <EmbeddedResource Include="GMap\GMapCommonBehavior.js" />
+    <EmbeddedResource Include="PlaceSearch\LocationWaypointCommonBehavior.debug.js" />
+    <EmbeddedResource Include="PlaceSearch\LocationWaypointCommonBehavior.js" />
+    <EmbeddedResource Include="CustomExtenders.css" />
+    <EmbeddedResource Include="PlaceSearch\PlaceSearchWaypointCommon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlaceSearchWaypointCommon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\Plugins.css" />
+    <EmbeddedResource Include="PlaceSearch\Location.css" />
+    <EmbeddedResource Include="VehicleList\VehicleListBehavior.js" />
+    <EmbeddedResource Include="VehicleList\VehicleListBehavior.debug.js" />
+    <EmbeddedResource Include="StepValidator\StepValidatorBehavior.js" />
+    <EmbeddedResource Include="StepValidator\StepValidatorBehavior.debug.js" />
+    <EmbeddedResource Include="PlaceSearch\PlaceSearch.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlaceSearch.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaceSearch\LocationAirportBehavior.js" />
+    <EmbeddedResource Include="PlaceSearch\LocationAirportBehavior.debug.js" />
+    <EmbeddedResource Include="PlaceSearch\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <EmbeddedResource Include="PlaceSearch\PlaceSearchAirport.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>PlaceSearchAirport.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\DateField.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DateField.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReservationDateTime\ReservationDateTimeBehavior.debug.js" />
+    <EmbeddedResource Include="ReservationDateTime\ReservationDateTimeBehavior.js" />
+    <EmbeddedResource Include="GMap\LocationGMap.js" />
+    <EmbeddedResource Include="GMap\LocationGMap.debug.js" />
+    <EmbeddedResource Include="PlaceSearch\images\transparent-16.jpg" />
+    <EmbeddedResource Include="GMap\GMap.css" />
+    <EmbeddedResource Include="GMap\images\logo_powered_by_bing.png" />
+    <EmbeddedResource Include="GMap\images\powered-by-google-on-white.png" />
+    <EmbeddedResource Include="PlaceSearch\images\ajax-loader.gif" />
+    <EmbeddedResource Include="MenuFormat\images\menuitem_out_85bbf9.png" />
+    <EmbeddedResource Include="MenuFormat\images\menuitem_out_3d499f.png" />
+    <EmbeddedResource Include="MenuFormat\MenuFormat.css" />
+    <EmbeddedResource Include="MenuFormat\MenuFormatBehavior.debug.js" />
+    <EmbeddedResource Include="MenuFormat\MenuFormatBehavior.js" />
+    <EmbeddedResource Include="ImageLoader\ImageLoaderBehavior.debug.js" />
+    <EmbeddedResource Include="ImageLoader\ImageLoaderBehavior.js" />
+    <EmbeddedResource Include="Plugins\jquery.datefield.debug.js" />
+    <EmbeddedResource Include="Plugins\jquery.datefield.js" />
+    <EmbeddedResource Include="Plugins\jquery.hovertooltip.debug.js" />
+    <EmbeddedResource Include="Plugins\jquery.hovertooltip.js" />
+    <EmbeddedResource Include="Plugins\jquery.maskedinput-1.3.debug.js" />
+    <EmbeddedResource Include="Plugins\jquery.maskedinput-1.3.js" />
+    <EmbeddedResource Include="Plugins\jquery.timefield.debug.js" />
+    <EmbeddedResource Include="Plugins\jquery.timefield.js" />
+    <EmbeddedResource Include="LocationCommon\LocationCommon.debug.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Plugins\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomExtenders.snk.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

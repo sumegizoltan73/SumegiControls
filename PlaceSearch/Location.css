@@ -1,0 +1,33 @@
+﻿/* placesearch */
+.ui-autocomplete li a img	    { width: 16px; height: 16px; }
+input.ui-autocomplete-loading   
+{ 
+	background-color: #feeebd; 
+	background-image: url('<%=WebResource("CustomExtenders.PlaceSearch.images.ajax-loader.gif")%>'); 
+	background-position: right; 
+	background-repeat: no-repeat; 
+}
+
+/* airport */
+.locationAirportPanel 		{ padding-top: 2px; font-size: 90%; }
+.locationAirportPanel table 	{ border: 1px solid #bcb6b6; }
+.locationAirportPanel th 		{ text-align: right; }
+
+.airlineresult table 			{ width : 100%; }
+.ui-airport-loading 
+{ 
+	background-image: url('<%=WebResource("CustomExtenders.PlaceSearch.images.ajax-loader.gif")%>'); 
+	background-position: right; 
+	background-repeat: no-repeat; 
+}
+table.ui-jqgrid-btable tr.ui-state-highlight 
+{ 
+	background-image: url('<%=WebResource("CustomExtenders.PlaceSearch.images.ui-bg_highlight-soft_75_ffe45c_1x100.png")%>'); 
+}
+.ui-jqgrid .ui-pg-input 	{ width: 15px; }
+.lnkclear 				{ color: Blue; padding-right: 40px; font-size: 80%; }
+.locationAirportPanel table.airlineinfo 	{ width: 820px; font-size: 90%; }
+.locationAirportPanel td.btncell 			{ text-align: right; }
+tr.airlineresult div.ui-jqgrid 			{ font-size: 90%; }
+.ui-dialog-buttonpane 					{ font-size: 70%; }
+ul.ui-autocomplete .airline 				{ font-size: 90%; }

@@ -1,0 +1,32 @@
+﻿.cspmenu table td       { padding: 0px 10px 0px 10px; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #84837e; background-color: #cdcdcd; cursor: pointer; }
+.cspmenu table table td { padding: 0px  0px 0px  0px; border: 0px; }
+.cspmenu a  { color: #2d3333; text-decoration: none; text-shadow: 1px 1px white; }
+.cspmenu a:hover    { color: #ffffff; text-decoration: none; text-shadow: 1px 1px black; }
+.cspmenu a:visited  { color: #2d3333; text-decoration: none; }
+.cspmenu a.menuhovered   { color: #ffffff; background-color: #3d499f; text-shadow: 1px 1px black; }
+.cspmenu a.menuselected  { color: #ffffff; background-color: #3d499f; text-shadow: 1px 1px black; }
+.cspmenu table.menuhovered  td  { color: #ffffff; background-color: #3d499f; }
+.cspmenu table.menuselected td  { color: #ffffff; background-color: #3d499f; }
+.cspmenu table td.menuitemout   { background-color: transparent; padding: 0px  0px 0px  0px; border: 0px; cursor: default; }
+.cspmenu table.menuselected td.menuitemout   
+{
+    background-color: transparent; 
+}
+.cspmenu table.menuselected td.menuitemout_bg   
+{
+    background-repeat: no-repeat;
+    width: 12px;
+}
+.cspmenu table.menuselected td.menuitemout_3d499f  
+{
+    background-image:url(<%=WebResource("CustomExtenders.MenuFormat.images.menuitem_out_3d499f.png")%>); 
+}
+.cspmenu table.menuselected td.menuitemout_85bbf9  
+{
+    background-image:url(<%=WebResource("CustomExtenders.MenuFormat.images.menuitem_out_85bbf9.png")%>); 
+}
+.cspmenu canvas.menuout { display: none; }
+.cspmenu table.menuselected canvas.menuout { display: block; }
+
+.cspbookmenu           { position: absolute; }
+.cspbookcontent        { position: absolute; }

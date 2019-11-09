@@ -1,0 +1,5 @@
+﻿/* timefield, datefield */
+div.timefield ul.ui-autocomplete { height: 200px; overflow: auto; font-size: 90%; }
+input.ui-validator-invalid { border: 1px solid Red; background-color: #f1cdcd; }
+input.timefield { width: 80px; }
+input.datefield { width: 80px; }
